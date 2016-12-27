@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 def main():
-    return "Hello"
+    return "Hello World"
 
 
 if __name__ == "__main__":
