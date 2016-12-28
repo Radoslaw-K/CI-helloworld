@@ -15,7 +15,7 @@ install:
 # command to run tests
 script: 
   - "python tests.py"
-  - "coverage run --source=main.py"
+  - "coverage run main.py tests.py"
 
 after_success:
   - "coveralls"
