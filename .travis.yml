@@ -1,4 +1,5 @@
-language: python
+language: 
+  - "python"
 
 python:
   - "2.7"
@@ -10,7 +11,6 @@ install:
   
 # command to run tests
 script: 
-  - "python tests.py"
   - "coverage run tests.py"
 
 after_success:
