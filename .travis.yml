@@ -1,4 +1,5 @@
 language: python
+
 python:
   - "2.6"
   - "2.7"
@@ -6,12 +7,15 @@ python:
   - "3.3"
   - "3.4"
   - "3.5"
+  
 # command to install dependencies
-install: "pip install -r requirements.txt"
+install: 
+  - "pip install -r requirements.txt"
+  
 # command to run tests
 script: 
-  "python tests.py"
-  "coverage run --source=main.py"
+  - "python tests.py"
+  - "coverage run --source=main.py"
 
 after_success:
-  "coveralls"
+  - "coveralls"
