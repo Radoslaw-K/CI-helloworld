@@ -1,7 +1,10 @@
 #!/usr/bin/python
 
-def main():
-    return "Hello World"
+def main(arg):
+    if arg == 1:
+        return "argument"
+    else:
+        return "Hello World"
 
 
 if __name__ == "__main__":
