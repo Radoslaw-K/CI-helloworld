@@ -7,5 +7,5 @@ def main(arg):
         return "Hello World"
 
 
-#if __name__ == "__main__":
-#    main(0)
+if __name__ == "__main__": # pragma: no cover
+    main(0)
